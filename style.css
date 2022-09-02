@@ -1,0 +1,49 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+#heart{
+  margin:150px;
+  display:inline-block;
+  position:relative;
+  transition: all 1s;
+  animation: xxx 1s infinite alternate;
+}
+@keyframes xxx{
+  0%{
+    transform:none;
+  }
+  100%{
+    transform:scale(1.5)
+  }
+}
+
+
+
+
+#heart>.left{
+  width:50px;
+  height:50px;
+  position:absolute;
+  left:-50px;
+  bottom:50px;
+  transform:rotate(45deg) translateX(35px);
+  border-radius: 50% 0 0 50%;
+  background:red;
+}
+
+#heart>.right{
+  width:50px;
+  height:50px;
+  position:absolute;
+  right:-50px;
+  bottom:50px;
+  transform:rotate(45deg) translateY(35px);
+  border-radius: 50% 50% 0 0;
+  background:red;
+}
+
+#heart>.bottom{
+  width:50px;
+  height:50px;
+  transform:rotate(45deg);
+  background:red;
+}
+  
